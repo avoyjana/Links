@@ -4,35 +4,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Physics Reference Library</title>
 
 <style>
+
 body{
-    font-family:Arial,sans-serif;
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
-    background:#f5f5f5;
+    font-family: Arial, sans-serif;
+    background:#f5f7fa;
+    margin:0;
+    padding:30px;
 }
 
 h1{
     text-align:center;
     color:#003366;
+    margin-bottom:40px;
 }
 
 details{
+    margin:10px 0;
+}
+
+.subject{
     background:white;
-    margin:15px 0;
     padding:15px;
     border-radius:10px;
     box-shadow:0 2px 6px rgba(0,0,0,0.1);
 }
 
-summary{
-    cursor:pointer;
-    font-size:1.4em;
+.subject > summary{
+    font-size:1.4rem;
     font-weight:bold;
     color:#003366;
+    cursor:pointer;
+}
+
+.category{
+    margin-top:15px;
+    margin-left:20px;
+}
+
+.category summary{
+    font-size:1.1rem;
+    font-weight:bold;
+    color:#444;
+    cursor:pointer;
 }
 
 ul{
@@ -44,8 +61,8 @@ li{
 }
 
 a{
-    text-decoration:none;
     color:#0066cc;
+    text-decoration:none;
 }
 
 a:hover{
@@ -56,152 +73,267 @@ a:hover{
     color:red;
     font-weight:bold;
 }
-</style>
 
+</style>
 </head>
+
 <body>
 
-<h1>Physics Reference Library</h1>
+<h1>📚 Physics Reference Library</h1>
 
-<!-- Mathematical Physics -->
-<details>
-    <summary>📘 Mathematical Physics</summary>
+<!-- ========================= -->
+<!-- MATHEMATICAL PHYSICS -->
+<!-- ========================= -->
 
-    <ul>
-        <li>
-            <a href="#">Methods of Theoretical Physics - Morse & Feshbach</a>
-        </li>
+<details class="subject">
+<summary>📘 Mathematical Physics</summary>
 
-        <li>
-            <a href="#">Special Functions - Andrews, Askey & Roy</a>
-        </li>
-
-        <li>
-            <a href="#">Mathematical Methods for Physicists - Arfken</a>
-        </li>
-    </ul>
+<details class="category">
+<summary>📚 Books</summary>
+<ul>
+<li><a href="#">Mathematical Methods for Physicists — Arfken</a></li>
+<li><a href="#">Methods of Theoretical Physics — Morse & Feshbach</a></li>
+<li><a href="#">Special Functions — Andrews, Askey & Roy</a></li>
+</ul>
 </details>
 
-<!-- Quantum Mechanics -->
-<details>
-    <summary>⚛ Quantum Mechanics</summary>
-
-    <ul>
-        <li>
-            <a href="#">Modern Quantum Mechanics - Sakurai</a>
-        </li>
-
-        <li>
-            <a href="#">Principles of Quantum Mechanics - Shankar</a>
-        </li>
-
-        <li>
-            <a href="#">Quantum Mechanics - Cohen-Tannoudji</a>
-        </li>
-    </ul>
+<details class="category">
+<summary>👨‍🔬 Renowned Physicists</summary>
+<ul>
+<li><a href="#">George Arfken</a></li>
+<li><a href="#">Morse</a></li>
+<li><a href="#">Feshbach</a></li>
+<li><a href="#">Bateman</a></li>
+</ul>
 </details>
 
-<!-- Quantum Optics -->
-<details>
-    <summary>🔦 Quantum Optics</summary>
-
-    <ul>
-        <li>
-            <a href="#">Quantum Optics - Scully & Zubairy</a>
-        </li>
-
-        <li>
-            <a href="#">Introductory Quantum Optics - Gerry & Knight</a>
-        </li>
-
-        <li>
-            <a href="#">Optical Coherence and Quantum Optics - Mandel & Wolf</a>
-        </li>
-    </ul>
+<details class="category">
+<summary>📄 Research Papers</summary>
+<ul>
+<li><a href="#">Green Function Methods</a></li>
+<li><a href="#">Special Function Applications</a></li>
+</ul>
 </details>
-
-<!-- Statistical Physics -->
-<details>
-    <summary>📊 Statistical Physics</summary>
-
-    <ul>
-        <li>
-            <a href="#">Statistical Mechanics - Pathria</a>
-        </li>
-
-        <li>
-            <a href="#">Equilibrium Statistical Physics - Plischke & Bergersen</a>
-        </li>
-
-        <li>
-            <a href="#">Statistical Physics of Fields - Kardar</a>
-        </li>
-    </ul>
-</details>
-
-<!-- Condensed Matter -->
-<details>
-    <summary>🧊 Condensed Matter Physics</summary>
-
-    <ul>
-        <li>
-            <a href="#">Solid State Physics - Ashcroft & Mermin</a>
-        </li>
-
-        <li>
-            <a href="#">Introduction to Solid State Physics - Kittel</a>
-        </li>
-    </ul>
-</details>
-
-<!-- High Energy Physics -->
-<details>
-    <summary>🚀 High Energy Physics (HEP)</summary>
-
-    <ul>
-
-        <li>
-            <a href="#">PT-symmetric Quantum Mechanics</a>
-        </li>
-
-        <li>
-            <a href="#">Gauge Theory of Elementary Particle Physics</a>
-            <span class="note">(Standard Textbook)</span>
-        </li>
-
-        <li>
-            <a href="#">The Standard Model and Higgs Physics</a>
-        </li>
-
-        <li>
-            <a href="#">Theory and Phenomenology of Two Higgs Doublet Models</a>
-        </li>
-
-        <li>
-            <a href="#">TASI 2014 Lectures: The Hunt for Dark Matter</a>
-        </li>
-
-    </ul>
 
 </details>
 
-<!-- General Relativity -->
-<details>
-    <summary>🌌 General Relativity & Cosmology</summary>
 
-    <ul>
-        <li>
-            <a href="#">Gravitation - Misner, Thorne & Wheeler</a>
-        </li>
+<!-- ========================= -->
+<!-- QUANTUM MECHANICS -->
+<!-- ========================= -->
 
-        <li>
-            <a href="#">Spacetime and Geometry - Carroll</a>
-        </li>
+<details class="subject">
+<summary>⚛ Quantum Mechanics</summary>
 
-        <li>
-            <a href="#">Cosmology - Steven Weinberg</a>
-        </li>
-    </ul>
+<details class="category">
+<summary>📚 Books</summary>
+<ul>
+<li><a href="#">Modern Quantum Mechanics — Sakurai</a></li>
+<li><a href="#">Principles of Quantum Mechanics — Shankar</a></li>
+<li><a href="#">Quantum Mechanics — Cohen-Tannoudji</a></li>
+</ul>
+</details>
+
+<details class="category">
+<summary>👨‍🔬 Renowned Physicists</summary>
+<ul>
+<li><a href="#">Dirac</a></li>
+<li><a href="#">Schrödinger</a></li>
+<li><a href="#">Heisenberg</a></li>
+<li><a href="#">Pauli</a></li>
+<li><a href="#">Born</a></li>
+</ul>
+</details>
+
+<details class="category">
+<summary>📄 Research Papers</summary>
+<ul>
+<li><a href="#">EPR Paper</a></li>
+<li><a href="#">Bell Inequality</a></li>
+</ul>
+</details>
+
+</details>
+
+
+<!-- ========================= -->
+<!-- QUANTUM OPTICS -->
+<!-- ========================= -->
+
+<details class="subject">
+<summary>🔦 Quantum Optics</summary>
+
+<details class="category">
+<summary>📚 Books</summary>
+<ul>
+<li><a href="#">Quantum Optics — Scully & Zubairy</a></li>
+<li><a href="#">Introductory Quantum Optics — Gerry & Knight</a></li>
+<li><a href="#">Optical Coherence and Quantum Optics — Mandel & Wolf</a></li>
+</ul>
+</details>
+
+<details class="category">
+<summary>👨‍🔬 Renowned Physicists</summary>
+<ul>
+<li><a href="#">Roy Glauber</a></li>
+<li><a href="#">Leonard Mandel</a></li>
+<li><a href="#">Emil Wolf</a></li>
+<li><a href="#">Marlan Scully</a></li>
+</ul>
+</details>
+
+<details class="category">
+<summary>📄 Research Papers</summary>
+<ul>
+<li><a href="#">Coherent States</a></li>
+<li><a href="#">Balanced Homodyne Detection</a></li>
+</ul>
+</details>
+
+</details>
+
+
+<!-- ========================= -->
+<!-- STATISTICAL PHYSICS -->
+<!-- ========================= -->
+
+<details class="subject">
+<summary>📊 Statistical Physics</summary>
+
+<details class="category">
+<summary>📚 Books</summary>
+<ul>
+<li><a href="#">Statistical Mechanics — Pathria</a></li>
+<li><a href="#">Kardar Statistical Physics of Fields</a></li>
+<li><a href="#">Statistical Physics — Landau & Lifshitz</a></li>
+</ul>
+</details>
+
+<details class="category">
+<summary>👨‍🔬 Renowned Physicists</summary>
+<ul>
+<li><a href="#">Boltzmann</a></li>
+<li><a href="#">Gibbs</a></li>
+<li><a href="#">Onsager</a></li>
+<li><a href="#">Kardar</a></li>
+</ul>
+</details>
+
+<details class="category">
+<summary>📄 Research Papers</summary>
+<ul>
+<li><a href="#">Ising Model</a></li>
+<li><a href="#">Keller-Segel Model</a></li>
+</ul>
+</details>
+
+</details>
+
+
+<!-- ========================= -->
+<!-- HIGH ENERGY PHYSICS -->
+<!-- ========================= -->
+
+<details class="subject">
+<summary>🚀 High Energy Physics</summary>
+
+<details class="category">
+<summary>📚 Books</summary>
+<ul>
+<li>
+<a href="#">
+Gauge Theory of Elementary Particle Physics
+</a>
+<span class="note">(Cheng & Li)</span>
+</li>
+
+<li>
+<a href="#">
+Introduction to Elementary Particles
+</a>
+</li>
+
+<li>
+<a href="#">
+Quarks and Leptons
+</a>
+</li>
+
+</ul>
+</details>
+
+<details class="category">
+<summary>👨‍🔬 Renowned Physicists</summary>
+<ul>
+<li><a href="#">Richard Feynman</a></li>
+<li><a href="#">Steven Weinberg</a></li>
+<li><a href="#">Abdus Salam</a></li>
+<li><a href="#">Murray Gell-Mann</a></li>
+<li><a href="#">Gerard 't Hooft</a></li>
+</ul>
+</details>
+
+<details class="category">
+<summary>📄 Research Papers</summary>
+<ul>
+
+<li>
+<a href="https://doi.org/10.48550/arXiv.2312.17386">
+PT-symmetric Quantum Mechanics
+</a>
+</li>
+
+<li>
+<a href="https://doi.org/10.48550/arXiv.hep-ph/0001283">
+Standard Model: An Introduction
+</a>
+</li>
+
+<li>
+<a href="https://doi.org/10.1016/j.ppnp.2018.01.003">
+The Standard Model and Higgs Physics
+</a>
+</li>
+
+</ul>
+</details>
+
+</details>
+
+
+<!-- ========================= -->
+<!-- GENERAL RELATIVITY -->
+<!-- ========================= -->
+
+<details class="subject">
+<summary>🌌 General Relativity & Cosmology</summary>
+
+<details class="category">
+<summary>📚 Books</summary>
+<ul>
+<li><a href="#">Gravitation — MTW</a></li>
+<li><a href="#">Spacetime and Geometry — Carroll</a></li>
+<li><a href="#">Cosmology — Weinberg</a></li>
+</ul>
+</details>
+
+<details class="category">
+<summary>👨‍🔬 Renowned Physicists</summary>
+<ul>
+<li><a href="#">Einstein</a></li>
+<li><a href="#">Hawking</a></li>
+<li><a href="#">Penrose</a></li>
+<li><a href="#">Carroll</a></li>
+</ul>
+</details>
+
+<details class="category">
+<summary>📄 Research Papers</summary>
+<ul>
+<li><a href="#">Einstein 1915 Paper</a></li>
+<li><a href="#">Black Hole Thermodynamics</a></li>
+</ul>
+</details>
 
 </details>
 
